@@ -1,0 +1,13 @@
+▫️Choose Ubuntu 22.04, t2.micro
+
+▫️Open Security Group → add inbound rule for port 5000 (TCP)
+
+▫️connect to your EC2 (ssh)
+
+▫️paste these commands
+<pre> ```bash sudo apt update && sudo apt upgrade -y
+sudo apt install python3-pip -y
+pip3 install flask joblib scikit-learn numpy ``` </pre>
+
+<pre> ```bash scp -i your-key.pem titanic_model.pkl app.py ubuntu@<ec2-ip>:/home/ubuntu/    ``` </pre>
+
