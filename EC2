@@ -4,10 +4,11 @@
 
 ▫️connect to your EC2 (ssh)
 
-▫️paste these commands
-<pre> ```bash sudo apt update && sudo apt upgrade -y
-sudo apt install python3-pip -y
-pip3 install flask joblib scikit-learn numpy ``` </pre>
+▫️paste these commands : 
 
-<pre> ```bash scp -i your-key.pem titanic_model.pkl app.py ubuntu@<ec2-ip>:/home/ubuntu/    ``` </pre>
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3-pip -y
+pip3 install flask joblib scikit-learn numpy
+
+scp -i your-key.pem titanic_model.pkl app.py ubuntu@<ec2-ip>:/home/ubuntu/
 
