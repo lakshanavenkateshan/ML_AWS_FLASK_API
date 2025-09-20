@@ -14,8 +14,14 @@ scp -i your-key.pem titanic_model.pkl app.py ubuntu@<ec2-ip>:/home/ubuntu/
 
 ▫️create app.py
 
-
 ▫️Run API by this command:
 python3 app.py
 
 ▫️copy the Running on URI
+
+▫️Open another terminal other than your EC2 terminal:
+test API by using this command:
+curl -X POST http://<ec2-public-ip>:5000/predict -H "Content-Type: application/json" -d "{\"features\": [3, 1, 22, 0, 0, 7.25]}"
+
+▫️it should return:
+{"prediction": 0}
