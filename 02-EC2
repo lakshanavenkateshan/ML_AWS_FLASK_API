@@ -17,3 +17,5 @@ scp -i your-key.pem titanic_model.pkl app.py ubuntu@<ec2-ip>:/home/ubuntu/
 
 ▫️Run API by this command:
 python3 app.py
+
+▫️copy the Running on URI
