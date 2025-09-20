@@ -12,7 +12,7 @@ pip3 install flask joblib scikit-learn numpy
 
 scp -i your-key.pem titanic_model.pkl app.py ubuntu@<ec2-ip>:/home/ubuntu/
 
-▫️create app.py
+▫️create app.py and paste the app.py
 
 ▫️Run API by this command:
 python3 app.py
